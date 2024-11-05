@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="images/png" href="images/FloodGuardLogo.png" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Create Account</h2>
+      <form action="index.html" id="registerForm">
+        <input type="email" id="email" placeholder="Email" required /><br />
+        <input
+          type="tel"
+          id="contact"
+          pattern="[0-9]*"
+          maxlength="15"
+          minlength="9"
+          placeholder="Contact Number"
+          required
+        /><br />
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          pattern=".{8,}"
+          title="Must be at least 8 characters long"
+          required
+        /><br />
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirm Password"
+          required
+        /><br />
+        <div class="checkbox">
+          <input type="checkbox" id="terms" required />
+          <label for="terms"
+            >I agree to the
+            <a href="terms&condition.html">Terms and Conditions</a></label
+          >
+        </div>
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have an account? <a href="index.html">Login</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dBoard.css" />
+    <link rel="icon" type="images/png" href="images/FloodGuardLogo.png" />
+    <title>FloodGuard</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="DashBoards.html"
+        ><img src="images/FloodGuardLogo.png" alt=""
+      /></a>
+
+      <div class="log">
+        <a href="FloodLog.html"
+          ><img src="images/history.png" alt="Flood History"
+        /></a>
+        <a href="index.html"
+          ><img src="images/power_18055113.png" alt="Logout"
+        /></a>
+      </div>
+    </header>
+    <div class="main-content">
+      <div class="sensor-container">
+        <div class="sensor-level">
+          <span class="sensor-label"><b>Low 25%</b></span>
+          <div class="circle-indicator" id="low-indicator"></div>
+        </div>
+        <hr />
+        <div class="sensor-level">
+          <span class="sensor-label"><b>Med 50%</b></span>
+          <div class="circle-indicator" id="med-indicator"></div>
+        </div>
+        <hr />
+        <div class="sensor-level">
+          <span class="sensor-label"><b>High 100%</b></span>
+          <div class="circle-indicator" id="high-indicator"></div>
+        </div>
+        <hr />
+      </div>
+      <div class="btn-container">
+        <button class="alert-btn" onclick="confirmAlert()">ALERT!</button>
+      </div>
+
+      <div class="map-container">
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.6038722179255!2d120.97858737423081!3d14.449977880748365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cdfa71b68dc9%3A0x9942fec01655ad8e!2sSTI%20College%20Las%20Pi%C3%B1as!5e0!3m2!1sen!2sph!4v1730690571437!5m2!1sen!2sph"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

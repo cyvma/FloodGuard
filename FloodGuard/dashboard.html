@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleDashboard.css" />
+    <link rel="icon" type="images/png" href="images/FloodGuardLogo.png" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>FloodGuard Dashboard</h1>
+      <div class="dropdown">
+        <button class="dropdown-button">▼</button>
+        <div class="dropdown-content">
+          <a href="Webform6.aspx">Flood History</a>
+          <a href="Webform5.aspx">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div class="sensor-container">
+        <div class="sensor-level">
+          <span class="sensor-label">Low 25%</span>
+          <div class="circle-indicator" id="low-indicator"></div>
+        </div>
+
+        <div class="sensor-level">
+          <span class="sensor-label">Med 50%</span>
+          <div class="circle-indicator" id="med-indicator"></div>
+        </div>
+
+        <div class="sensor-level">
+          <span class="sensor-label">High 100%</span>
+          <div class="circle-indicator" id="high-indicator"></div>
+        </div>
+
+        <button class="alert-btn" onclick="confirmAlert()">ALERT!</button>
+      </div>
+
+      <div class="map-container">
+        <p>Location Map</p>
+      </div>
+    </div>
+  </body>
+</html>
